@@ -113,8 +113,9 @@ sub filterdropdown
     if (exists($data->{'path'}) && ($data->{'path'} ne 'default')) {
         my $column = $filter_vals->{'name'};
 
-        $result->{'column'} = $data->{'filterType'};
+        $result->{'column'} = $column;
         $result->{'value'}  = $data->{'path'};
+        $result->{'value'} =~ s/\.//;
         $result->{'value'} =~ s/\.$column//;
 
     }
