@@ -44,13 +44,24 @@ JPList module decodes the request params encoded by jplist L<ajax core module|ht
 =over 4
 
 =item "dbh" 
+
     Database handle 
 
 =item "db_table_name" 
+
     Table name from where data should be fetched.
 
 =item "request_params" 
+
     JPList UI module Request params passed here so that JPList modlue decodes and applys the fitler and sort accordingly
+
+=item "fields" 
+
+    Custom fields or custom query
+
+=item "where_fields" 
+
+    Fixed WHERE fields/clause to be used on all queries
 
 =back
 

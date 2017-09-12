@@ -31,11 +31,10 @@ our $VERSION = '0.01';
 
     my $jplist = JPList->new(
                 {
-                    db_shard_type  => 'System/MDM/Alerts',
-                    db_shard_id    => <SHARD_ID>,
+                    dbh            => $dbh,
                     db_table_name  => <TABLE/VIEW>,
                     fields         => <Custom fields or custom query>,
-                    where_fields   => <WHERE FIELDS like UtilityID etc..>,
+                    where_fields   => <Fixed WHERE FIELDS to be used on all queries>,
                     request_params => <JPList request params statuses>
                 }
             );
