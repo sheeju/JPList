@@ -39,7 +39,12 @@ our $VERSION = '0.01';
                 }
             );
 
+    my $jplist = JPList->new({});
+    $jplist->get_resultset();
+
 =head1 DESCRIPTION
+
+    JPList module decodes the request params encoded by jplist L<ajax core module|https://raw.githubusercontent.com/no81no/jplist/master/dist/js/jplist.core-ajax.min.js> and then fetchs the data from appropriate table by applying required filter and sort options.
 
     my $jplist = JPList->new({});
     $jplist->get_resultset();
@@ -51,6 +56,44 @@ our $VERSION = '0.01';
 =cut
 
 # ========================================================================== #
+
+=item C<dbh>
+
+Params : $dbh
+
+Desc   : Database Handle
+
+=item C<db_table_name>
+
+Params : $table_name
+
+Desc   : Table name to query the result
+
+=item C<fields>
+
+Params : String
+        '"Column1", "Column2"'
+
+Desc   : Fields can be column list
+
+=item C<where_fields>
+
+Params : HASHREF
+    {
+        Column1 => ''
+    }
+
+Desc   : Table name to query the result
+
+=item C<request_params>
+
+Params : NONE
+
+Returns: NONE
+
+Desc   : JPList request params statuses
+
+=cut
 
 has 'request_params' => (
     is       => 'rw',
@@ -67,7 +110,7 @@ has 'jplist_request' => (
 
 # ========================================================================== #
 
-=head2 methods
+=head2 METHODS
 
 =over 4
 
@@ -160,6 +203,8 @@ L<http://search.cpan.org/dist/JPList/>
 =back
 
 =head1 ACKNOWLEDGEMENTS
+
+Development time supported by Exceleron L<www.exceleron.com|http://www.exceleron.com>.
 
 =head1 LICENSE AND COPYRIGHT
 
