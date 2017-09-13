@@ -40,7 +40,9 @@ has 'sql_abs' => (
 
 # ========================================================================== #
 
-=head2 methods
+=back
+
+=head2 METHODS
 
 =over 4
 
@@ -295,19 +297,22 @@ sub _get_paging_count
 
 # ========================================================================== #
 
-=item B<select_hashref>
+=item C<select_hashref>
 
-Params : {
-             sql => 'SQL Statement', 
-             bind_vals => ARRAYREF[optional],
-             return_key => Column [optional],
-             return_aoa => 1 [optional]
-         }
+Params : 
+
+    {
+         sql => 'SQL Statement', 
+         bind_vals => ARRAYREF[optional],
+         return_key => Column [optional],
+         return_aoa => 1 [optional]
+    }
 
 Returns: ARRAYREF/HASHREF of data
-         If return_key is undef : Returns rows as Array of Hash
-         If return_key has a valid column: Returns rows as Hash of Hash with Column value as hash key
-         If return_aoa is 1 : Returns rows as Array of Array
+
+    - If return_key is undef : Returns rows as Array of Hash
+    - If return_key has a valid column: Returns rows as Hash of Hash with Column value as hash key
+    - If return_aoa is 1 : Returns rows as Array of Array
 
 Desc   : Using SQL get hashref of data
 

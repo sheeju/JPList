@@ -87,6 +87,10 @@ $jplist->get_resultset() is used to return the resultset data and count based on
 
 =back
 
+=head1 REPOSITORY
+
+L<https://github.com/sheeju/JPList>
+
 =head1 ACKNOWLEDGEMENTS
 
 Development time supported by Exceleron L<www.exceleron.com|http://www.exceleron.com>.

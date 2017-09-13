@@ -32,6 +32,36 @@ The JPList::DB::Config module allows you store the DB Config
 
 # ========================================================================== #
 
+=item C<dbh>
+
+Params : $dbh
+
+Desc   : Database Handle
+
+=item C<db_table_name>
+
+Params : $table_name
+
+Desc   : Table name to query the result
+
+=item C<fields>
+
+Params : String
+        '"Column1", "Column2"'
+
+Desc   : Fields can be column list
+
+=item C<where_fields>
+
+Params : HASHREF
+    {
+        Column1 => ''
+    }
+
+Desc   : Table name to query the result
+
+=cut
+
 has 'dbh' => (
     is      => 'rw',
     required => 1,

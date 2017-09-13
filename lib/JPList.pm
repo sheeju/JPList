@@ -17,7 +17,9 @@ with 'JPList::DB::Result';
 
 =head1 NAME
 
-JPList - JPList Main Module 
+JPList
+
+JPList module is a data source bundle that works with Perl and database handle where as jPlist (http://jplist.com) behaves as UI module only. 
 
 =head1 VERSION
 
@@ -110,6 +112,8 @@ has 'jplist_request' => (
 
 # ========================================================================== #
 
+=back
+
 =head2 METHODS
 
 =over 4
@@ -201,6 +205,11 @@ L<http://cpanratings.perl.org/d/JPList>
 L<http://search.cpan.org/dist/JPList/>
 
 =back
+
+=head1 REPOSITORY
+
+L<https://github.com/sheeju/JPList>
+L<https://github.com/sheeju/JPListDemo>
 
 =head1 ACKNOWLEDGEMENTS
 
