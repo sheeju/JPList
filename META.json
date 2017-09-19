@@ -1,0 +1,58 @@
+{
+   "abstract" : "JPList",
+   "author" : [
+      "Sheeju Alex"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "ExtUtils::MakeMaker version 7.0401, CPAN::Meta::Converter version 2.150005",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "JPList",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "inc"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.48"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.48"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Moose"         : "2.1804",
+            "SQL::Abstract" : "1.81",
+            "URI::Escape"   : "1.72",
+            "JSON"          : "2.90"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::Class" : "0.5",
+            "Test::Most" : "0.34"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/sheeju/JPList.git",
+         "web" : "hhttps://github.com/sheeju/JPList"
+      }
+   },
+   "version" : "0.4",
+   "x_serialization_backend" : "JSON::PP version 2.27300"
+}
