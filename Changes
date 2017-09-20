@@ -1,9 +1,11 @@
 Revision history for JPList
 
+0.04
+		Makefile and Meta changes to fix Failed tests on netbsd
 0.03
-		Meta Chagnes and module dependency added
+		Makefile and Meta changes to fix Failed tests
 0.02	
-		Testing changes
+		Makefile and Meta changes to fix Failed tests
 0.01    
-        First version, released
+        JPList First version, released
 

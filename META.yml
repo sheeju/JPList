@@ -23,10 +23,11 @@ prereqs:
       ExtUtils::MakeMaker: '6.48'
   runtime:
     requires:
-      Moose: '2.1804'
-      SQL::Abstract: '1.81'
+      namespace::autoclean: '0.28'
       URI::Escape: '1.72'
       JSON: '2.90'
+      Moose: '2.1804'
+      SQL::Abstract: '1.81'
   test:
     requires:
       Test::Class: '0.5'
